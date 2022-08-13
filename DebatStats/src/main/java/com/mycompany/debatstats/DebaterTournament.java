@@ -16,7 +16,7 @@ class DebaterTournament{
     public LinkedList <Round> rounds;
     public String name;
     public String teamName;
-    public Debater partner;
+    public String partner;
     public int points;
     public double prodSP; // promedioSP
     public double ds; //desviacion standar
@@ -52,11 +52,11 @@ class DebaterTournament{
         this.teamName = teamName;
     }
 
-    public Debater getPartner() {
+    public String getPartner() {
         return partner;
     }
 
-    public void setPartner(Debater partner) {
+    public void setPartner(String partner) {
         this.partner = partner;
     }
 
@@ -100,6 +100,7 @@ class DebaterTournament{
             cont++;
         }
         prom = sum/cont;
+        this.setProdSP(prom);
         return numFormated(prom);
     }
     private double calculeDS (){
