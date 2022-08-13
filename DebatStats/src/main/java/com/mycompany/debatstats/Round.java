@@ -4,16 +4,19 @@
  */
 package com.mycompany.debatstats;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author User
  */
 class Round {
   public String roundNum;
-  public int sp;
   public String camera;
+  public int sp;
   public String rol;
   public int points;
+  public LinkedList <String> judges;
 
 
 
@@ -22,6 +25,7 @@ class Round {
         this.sp = sp;
         this.rol = rol;
         this.points = points;
+        this.judges = new LinkedList<>();
     }
 
     public String getRoundNum() {
@@ -62,5 +66,15 @@ class Round {
     public void setCamera(String camera) {
         this.camera = camera;
     }
+
+    public LinkedList<String> getJudges() {
+        return judges;
+    }
+
+    public void setJudges(LinkedList<String> judges) {
+        this.judges = judges;
+    }
+    
+    
   
 }

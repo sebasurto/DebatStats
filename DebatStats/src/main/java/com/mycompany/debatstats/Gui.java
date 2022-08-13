@@ -12,6 +12,8 @@ import java.util.LinkedList;
  */
 public class Gui {
     public LinkedList <Society> societies;
-    public void chargeData (){
+    
+    public void chargeData (String ruta){
     }
+    
 }

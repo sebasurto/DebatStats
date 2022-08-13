@@ -13,7 +13,7 @@ import javafx.scene.image.Image;
  */
 public class Debater {
    public String name;
-   public Society society;
+   public String society;
    public LinkedList <DebaterTournament> tournaments;
    public Image foto;
 
@@ -33,11 +33,11 @@ public class Debater {
         this.name = name;
     }
 
-    public Society getSociety() {
+    public String getSociety() {
         return society;
     }
 
-    public void setSociety(Society society) {
+    public void setSociety(String society) {
         this.society = society;
     }
 
