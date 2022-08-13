@@ -9,11 +9,11 @@ package com.mycompany.debatstats;
  * @author User
  */
 class Round {
-  String roundNum;
-  int sp;
-  String camera;
-  String rol;
-  int points;
+  public String roundNum;
+  public int sp;
+  public String camera;
+  public String rol;
+  public int points;
 
 
 

@@ -11,6 +11,7 @@ import java.util.LinkedList;
  * @author User
  */
 public class Gui {
-    LinkedList <Society> societies;
-    
+    public LinkedList <Society> societies;
+    public void chargeData (){
+    }
 }
